@@ -7,11 +7,14 @@ pipeline {
         disableConcurrentBuilds()
         ansiColor('xterm')
     }
+    parameters{
+        string( name: 'appVersion', defaultValue:'1.0.0', description:'this is the app version')
+    }
     stages {
         stage('read the version'){
             steps{
                 script{
-                    echo appversion ooo is :${appVersion}
+                    echo appversion ooo is ${appVersion}
                 }
             }
         }
