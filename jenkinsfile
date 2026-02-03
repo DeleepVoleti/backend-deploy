@@ -13,9 +13,10 @@ pipeline {
     stages {
         stage('read the version'){
             steps{
-             sh """
-               echo "app version is ${appVersion}"
-             """
+              script{
+                echo "app version is ${params.appVersion}"
+              } 
+            
             }
         }
    }
