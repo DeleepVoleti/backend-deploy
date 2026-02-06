@@ -20,3 +20,7 @@ variable "zone_name" {
     type = string
     default = "dilipswebsite.online"
 }
+
+variable "app_version" {
+    type = string
+}
