@@ -20,7 +20,7 @@ data "aws_ami" "ami_from_ds" {
     owners = ["973714476881"]
     
     filter {
-        name = "name"
+        name = "AMI name"
         values = ["RHEL-9-DevOps-Practice"]
     }
 }
